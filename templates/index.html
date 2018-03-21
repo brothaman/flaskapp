@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My Webpage</title>
+<style>
+table, th, td {
+    border: 1px solid black;
+}
+</style>
+</head>
+<body>
+    <ul id="navigation">
+    {% for item in navigation %}
+        <li><a href="{{ item.href }}">{{ item.caption }}</a></li>
+    {% endfor %}
+    </ul>
+
+    <h1>Problem 3 - Exercise 3</h1>
+	 <table style="width:100%">
+	  <tr>
+	    <td>Metadata</td>
+            <td>Value</td>
+	  </tr>
+          <tr>
+	    <td>Instance</td>
+            <td>{{html1}}</td>
+	  </tr>
+	  <tr>
+	    <td>ami-launch-index</td>
+            <td>{{html2}}</td>
+	  </tr>
+	  <tr>
+	    <td>public-hostname</td>
+            <td>{{html3}}</td>
+	  </tr>
+	  <tr>
+	    <td>public-ipv4</td>
+            <td>{{html4}}</td>
+	  </tr>
+	  <tr>
+	    <td>local-hostname</td>
+            <td>{{html5}}</td>
+	  </tr>
+	  <tr>
+	    <td>local-ipv4</td>
+            <td>{{html6}}</td>
+	  </tr>
+	</table> 
+
+    {# a comment #}
+</body>
+</html>
